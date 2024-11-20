@@ -1,5 +1,7 @@
 # My personal blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ac238a80-17bd-4cce-bd3a-a60f08831fa9/deploy-status)](https://app.netlify.com/sites/alexei-mamani/deploys)
+
 ## 📄 Configuration
 
 The blog posts on the demo serve as the documentation and configuration.
