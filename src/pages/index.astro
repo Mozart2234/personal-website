@@ -4,7 +4,6 @@ import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
-import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
 
 const blog = (await getCollection("blog"))
@@ -32,27 +31,21 @@ const blog = (await getCollection("blog"))
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
-    <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, I'm Alexei <span class="text-xl">👋🏻</span> 
-    </h4>
+    <h3 class="animate text-4xl font-bold text-black dark:text-white">
+      Hola, soy Alexei <span class="text-4xl">👋🏻</span> 
+    </h3>
     <div class="space-y-16">
       <section>
-        <article class="space-y-4">
+        <article class="text-base font-light">
           <p class="animate">
-            I am a minimal, seo friendly, accessible portfolio and blog for developers. 
-            I am an even more lightweight version of my popular theme
-            <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
-              Astro Sphere
-            </Link>.
-            I have a lighthouse scores of 100 across the board for performance, 
-            accesibility, best practices and SEO.
+            Un entusiasta de la tecnología y el desarrollo, siempre en busca de aprender algo nuevo 
+            y crear soluciones que marquen la diferencia. Este blog es mi espacio para documentar 
+            proyectos, compartir aprendizajes y reflexionar sobre todo lo que me apasiona. 🚀
           </p>
           <p class="animate">
-            Visit
-            <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
-              Astro Nano on Github
-            </Link>
-            to fork the repository, read the docs or one-click deploy on Vercel or Netlify. 
+            Mi objetivo es simple: compartir lo que sé de una manera cercana y entretenida, 
+            mientras aprendo en el proceso. Espero que encuentres aquí algo que te inspire, 
+            te sea útil o, al menos, te saque una sonrisa. 😊
           </p>
         </article>
       </section>
@@ -60,10 +53,10 @@ const blog = (await getCollection("blog"))
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
+            Últimas publicaciones
           </h5>
           <Link href="/blog">
-            See all posts
+            Ver todas las entradas
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
@@ -124,7 +117,7 @@ const blog = (await getCollection("blog"))
 
       <section class="animate space-y-4">
         <h5 class="font-semibold text-black dark:text-white">
-          Encuentrame en la red
+          Encuéntrame en la red
         </h5>
         <!-- <article> -->
         <!--   <p> -->
@@ -134,7 +127,7 @@ const blog = (await getCollection("blog"))
         <ul class="flex flex-wrap gap-2">
           {SOCIALS.map(SOCIAL => (
             <li class="flex gap-x-2 text-nowrap">
-              <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
+              <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} en ${SOCIAL.NAME}`}>
                 {SOCIAL.NAME}
               </Link>
               {"/"}

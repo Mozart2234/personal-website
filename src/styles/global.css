@@ -20,7 +20,7 @@ body {
   @apply font-sans;
   @apply flex flex-col;
   @apply bg-slate-100 dark:bg-slate-950;
-  @apply text-black/50 dark:text-white/75;
+  @apply text-black/70 dark:text-white/75;
 }
 
 header {

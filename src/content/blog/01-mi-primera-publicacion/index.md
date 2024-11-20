@@ -1,7 +1,7 @@
 ---
-title: "Getting started"
-description: "Hit the ground running."
-date: "Mar 22 2024"
+title: "Mi primera publicación"
+description: "Mi primera publicación en mi blog personal."
+date: "20 noviembre 2024"
 ---
 
 The basic configuration of Nano is pretty simple.
@@ -71,4 +71,3 @@ export const SOCIALS: Socials = [
 | :---- | :-- | :-------------------------------------- |
 | NAME  | Yes | Displayed in contact section as a link. |
 | HREF  | Yes | External url to social media profile.   |
-
