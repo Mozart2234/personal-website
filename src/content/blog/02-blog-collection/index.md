@@ -8,7 +8,7 @@ The `blog` collections is found in `src/content/blog`.
 
 Working with the `blog` collection:
 
-```
+```folder
 📁 /src/content/blog
 └── 📁 post-1
       └── 📄 index.md
@@ -20,7 +20,6 @@ In the above example, two static pages will be generated, based on the existence
 
 - `https://example.com/blog/post-1`
 - `https://example.com/blog/post-2`
-
 
 All content must be preceded by required metadata in the markdown file in `yaml` format, and be enclosed by triple dashes. --- ---
 
@@ -35,12 +34,12 @@ draft: false
 
 Metadata fields
 
-| Field       | Req | Type    | Remarks                                          |
-| :---------- | :-- | :------ | :----------------------------------------------- |
-| title       | Yes | string  | Title of the content. Used in SEO and RSS.       |
-| description | Yes | string  | Description of the content. Used in SEO and RSS. |
-| date        | Yes | string  | Must be a valid date string (able to be parsed). |
-| draft       | No* | boolean | draft: true, content will not be published.      |
+| Field       | Req  | Type    | Remarks                                          |
+| :---------- | :--- | :------ | :----------------------------------------------- |
+| title       | Yes  | string  | Title of the content. Used in SEO and RSS.       |
+| description | Yes  | string  | Description of the content. Used in SEO and RSS. |
+| date        | Yes  | string  | Must be a valid date string (able to be parsed). |
+| draft       | No\* | boolean | draft: true, content will not be published.      |
 
 All that's left to do is write your content under the metadata.
 
